@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bateria Online</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="images/bateria.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilos.css">
+
+    </head>
+    <body>
+
+        <h1>Bateria Online</h1>
+
+        <section class="teclado">
+            <button class="tecla tecla_pom keyq numpad7"><span>Q</span> Pom</button>
+            <button class="tecla tecla_clap keyw numpad8"><span>W</span> Clap</button>
+            <button class="tecla tecla_tim keye numpad9"><span>E</span> Tim</button>
+
+            <button class="tecla tecla_puff keya numpad4"><span>A</span> Puff</button>
+            <button class="tecla tecla_splash keys numpad5"><span>S</span> Splash</button>
+            <button class="tecla tecla_toim keyd numpad6"><span>D</span> Toim</button>
+
+            <button class="tecla tecla_psh keyz numpad1"><span>Z</span> Psh</button>
+            <button class="tecla tecla_tic keyx numpad2"><span>X</span> Tic</button>
+            <button class="tecla tecla_tom keyc numpad3"><span>C</span> Tom</button>
+        </section>
+
+        <div class="composer">
+            <input type="text" id="input" placeholder="Faça uma composição..."/>
+            <button id="botao">Tocar</button>
+        </div>
+
+        <audio src="sounds/keyq.wav" class="s_keyq s_numpad7" id="som_tecla_pom"></audio>
+        <audio src="sounds/keyw.wav" class="s_keyw s_numpad8" id="som_tecla_clap"></audio>
+        <audio src="sounds/keye.wav" class="s_keye s_numpad9" id="som_tecla_tim"></audio>
+        <audio src="sounds/keya.wav" class="s_keya s_numpad4" id="som_tecla_puff"></audio>
+        <audio src="sounds/keys.wav" class="s_keys s_numpad5" id="som_tecla_splash"></audio>
+        <audio src="sounds/keyd.wav" class="s_keyd s_numpad6" id="som_tecla_toim"></audio>
+        <audio src="sounds/keyz.wav" class="s_keyz s_numpad1" id="som_tecla_psh"></audio>
+        <audio src="sounds/keyx.wav" class="s_keyx s_numpad2" id="som_tecla_tic"></audio>
+        <audio src="sounds/keyc.wav" class="s_keyc s_numpad3" id="som_tecla_tom"></audio>
+
+        <script src="script.js"></script>
+    </body>
+</html>
